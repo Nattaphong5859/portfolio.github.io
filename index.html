@@ -1,0 +1,104 @@
+<html>
+    <head>
+        
+        <title>portfolio</title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <a data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="800" class="logo" href="#">DEW</a>
+            <nav>
+                     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#home" >Home</a></div>
+                     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#about">About</a></div>
+                     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#skills">skills</a></div>
+                     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="#">Project</a></div>
+            </nav>
+          </header>
+            <section class="home" id="home">
+            <div class="imgbox">
+                <img src="me3.png"  class="Pofile" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="700">
+            </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hi it' <span>Nattaphong</span></h1>                    
+                    <span data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700" class="text first-text">I'm a</span>
+                    <span data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700" class="text sec-text">Student</span>
+                    <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700" class="tt">เว็บนี้สร้างเพื่อแนะนำตัวเองและผลงานในด้านการเขียบโปรแกรมต่างๆ</p>
+                    <div class="icon">
+                        <a data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="800" href="https://www.facebook.com/heredew.d.33/"><i class="fa-brands fa-facebook"></i></a>
+                        <a data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="700"href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </section>
+            
+            <script>
+                const text = document.querySelector(".sec-text");
+                const textLoad = () => {
+                    setTimeout(() => {
+                        text.textContent = "Student";
+                    }, 0);
+                    setTimeout(() => {
+                        text.textContent = "Developer";
+                    }, 4000);
+                    setTimeout(() => {
+                        text.textContent = "Hero!!!!";
+                    }, 8000); //1s = 1000 milliseconds
+                }
+                textLoad();
+                setInterval(textLoad, 12000);
+            </script>  
+            <section class="about-me-section" id="about">
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"class="container">
+                    <div class="about-left">
+                        <img src="me3.png" alt="รูปโปรไฟล์" class="profile-pic" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="700">
+                    </div> 
+                    <div class="about-right">
+                        <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">About Me</h1>
+                        <div class="line"></div>
+                        <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">สวัสดีทุกคน! ฉันชื่อ Nattaphong เป็นนักพัฒนาเว็บจากประเทศไทย  ฉันสนุกกับสิ่งที่ฉันทำตอนนี้ และในมุมมองของฉัน การสร้างโปรแกรมไม่ใช่แค่การทำงาน แต่ยังเป็นศิลปะที่มีคุณค่าด้านสุนทรียะ</p>
+                        <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">งานของฉันคือการสร้างเว็บไซต์ให้สามารถใช้งานได้ดีและเป็นมิตรกับผู้ใช้ แต่ยังคงมีความน่าสนใจ นอกจากนี้ ฉันยังให้ความใส่ใจในรายละเอียดของผลิตภัณฑ์เพื่อให้เว็บไซต์สามารถดึงดูดความสนใจและใช้งานง่าย เป้าหมายของฉันคือการสื่อสารข้อความและตัวตนของคุณอย่างสร้างสรรค์ที่สุด หากคุณสนใจจ้างฉัน กรุณาติดต่อมาตามรายละเอียดที่ระบุ</p>
+                    </div>
+                </div>
+            </section>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init({offset:0});
+            </script>
+           <body>
+           
+               <section class="skills-section" id="skills" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
+                   <div class="skills-container">
+                       <h1>skills</h1>
+                       <div class="tabs">
+                           <button class="tab active">Tech Stack</button>
+                       </div>
+                       <div class="skills-grid" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                           <div class="skill-box">
+                               <img src="html5.png" alt="HTML">
+                               <p>HTML</p>
+                           </div>
+                           <div class="skill-box">
+                               <img src="CSS.png" alt="CSS" >
+                               <p>CSS</p>
+                           </div>
+                           <div class="skill-box">
+                               <img src="Python.png" alt="PHP">
+                               <p>Python</p>
+                           </div>
+                           <div class="skill-box">
+                               <img src="javasc.png" alt="Javascript">
+                               <p>Javascript</p>
+                           </div>
+                           <div class="skill-box">
+                               <img src="c++.png" alt="Laravel">
+                               <p>C++</p>
+                           </div>
+                       </div>
+                   </div>
+               </section>
+           </body>
+           </html>
+           
+    </body>
+</html>
